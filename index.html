@@ -1,61 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adopt pet</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Pet Adoption Home Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    function browse() {
+      location.replace("adopt.php")
+    }
+</script>
 </head>
 <body>
-    <section id="header">
-        <a href="#"><img src="img/logo.png"  class="logo" alt=""></a>
-        
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">home</a></li>
-                <li><a href="signup.html">signup</a></li>
-                <li><a href="index.html">login</a></li>
-                <li><a href="document.html">about</a></li>
-            </ul>
-        </div>
-    </section>
+<header>
+      <nav>
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="rehome.php">REHOME</a></li>
+          <li><a href="adopt.php">ADOPT</a></li>
+          <li><a href="login.php">Login</a></li>
+          <li><a href="register.php">Register</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <main>
-        <center><b><u>This is the home page please log-in to continue!!!!</u></center>
+  
+  <main>
+    <div class="hero-card">
+      <h1>Find Your New Best Friend</h1>
+      <p>Looking for a furry companion? Browse our selection of pets available for adoption!</p>
+      <button onclick="browse()">Browse Pets</button>
+    </div>
+  </main>
 
-            <div class="session">
-              <div class="left">
-          
-              </div>
-              <form action="" class="log-in" autocomplete="off"> 
-                <h4>Adopt a pet</h4>
-                <p>Welcome back! <u><b>Log in </u></b>to your account:</p>
-                <div class="floating-label">
-                    <label for="email">Username:</label>
-                    <input placeholder="Username" type="Username" name="Username" id="Username" autocomplete="off">
-                  
-                  <div class="icon">
-          
-                  </div>
-                </div>
-                <div class="floating-label">
-                    <label for="password">Password:</label>
-                    <input placeholder="Password" type="password" name="password" id="password" autocomplete="off">
-                  <div class="icon">
-                    
-                  </div>
-                  
-                </div>
-                <button type="submit" onClick="return false;">Log in</button>
-                <p > Dont have account ?</p>
-                <a href="" class="discrete" target="_blank">signup</a>
-              </form>
-            </div>
 
-    </main>
-    
-
-    <script src="script.js"></script>
+  <section class="testimonials">
+    <h2>Happy Adopters</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <img src="https://via.placeholder.com/150x150" alt="Adopter">
+        <p>"I adopted my sweet kitty from this website and couldn't be happier. The process was easy and the staff were so helpful!"</p>
+        <h3>Jane Doe</h3>
+      </div>
+      <div class="testimonial">
+        <img src="https://via.placeholder.com/150x150" alt="Adopter">
+        <p>"I never thought I would find my perfect dog online, but this website made it happen. Thank you for bringing my fur baby into my life!"</p>
+        <h3>John Smith</h3>
+      </div>
+    </div>
+  </section>
+  
+  
 </body>
 </html>
